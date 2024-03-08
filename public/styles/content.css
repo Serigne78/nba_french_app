@@ -122,17 +122,19 @@ header{
       background-color: lightcoral;
     }
 
-.player_photo{
-      margin-left: 400px;
-}
-
-.player_photo img{
-      height: 300px;
-      width: 300px;
-      
-}
 
 
-.points-avg{
-      font-weight: bolder;
+
+
+
+
+.info-team{
+      display: inline-block;
 }
+
+.avg-stats{
+      display: inline-block;
+      background-color: beige;
+      position: absolute;
+}
+
