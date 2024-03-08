@@ -18,7 +18,7 @@ li,h1,a{
 
 
 header{
-      background-color:brown;
+      
       padding: 10px;
       display: flex;
       justify-content: flex-end;
@@ -76,10 +76,63 @@ header{
 }
 
 
-.style-search{
-      height: 30px;
-      width: 300px;
+
+
+.search-bar input[type="text"] {
+      width: 40rem; /* Utilisez toute la largeur disponible */
+      padding: 8px; /* Ajustez le remplissage du texte */
+      border: 1px solid black; /* Supprimez la bordure par défaut du champ de saisie */
+      outline: none; /* Supprimez la mise en surbrillance par défaut lors du focus */
+      font-size: 16px; /* Ajustez la taille de la police */
+      border-radius: 45px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
 }
 
 
+.content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      height: 400px;
+      background-color: blueviolet;
+}
 
+
+.intro {
+      display: flex;
+      flex: 1;
+    }
+    
+.left-block,
+.right-block {
+      flex: 1;
+      padding: 10px;
+    }
+    
+.left-block {
+      background-color: lightblue;
+    }
+
+.entete-intro{
+      background-color: aqua;
+}
+    
+.right-block {
+      background-color: lightcoral;
+    }
+
+.player_photo{
+      margin-left: 400px;
+}
+
+.player_photo img{
+      height: 300px;
+      width: 300px;
+      
+}
+
+
+.points-avg{
+      font-weight: bolder;
+}

@@ -19,10 +19,10 @@
         <header>   
             <h1 class="logo"><box-icon type='logo' name='xing'></box-icon>HexaHoops</h1>
             <div class="search-bar">
-                  <form action="/search-player">
-                        <input class ="style-search" type="text" id="input-box" placeholder="Search Player" autocomplete="off">
+                  <form action="/search-player" method="post">
+                        <input class ="style-search" name="player_name" type="text" id="input-box" placeholder="Search Player" autocomplete="off">
                   </form>
-                  <button><box-icon name='search-alt-2'></box-icon></button>
+                 
             </div>
           <nav>
             <ul class="nav_menu">
@@ -34,9 +34,84 @@
           <a href="#"><button class="sign-in">Sign in</button></a>
 
             </header>
+            
+      
+      <% if (locals.messageError) {%>
+            <p><%= messageError %></p>
+            <% } else {%>
+
+            
+           
+      <div class="content">
+                  <div class="intro">
+                        <div class="left-block">
+                              <div class="entete-intro">
+                                    <% if (locals.player) { %>
+                                    <h2><%= player %></h2>
+                                    <% } else { %>
+                                    <h2>Select player</h2>
+                                          <% } %>
+                                   
+                              </div>
+
+                              <div class="info-team">
+                                    <p>Team: San Antonio Spurs</p>
+                                    <p>Height: 7'4</p>
+                                    <p>Weight: 210lb</p>
+                                    <p>Country: France</p>
+                                    <p>Last Attented: Metropolitans 92</p>
+                                    <p>Draft: 2023 R1 Pick 1</p>
+                                    
+                              </div>
+
+                              <div class="avg-stats">
+                                    <p class="points-avg">PPG: 20.6</p>
+                                    <p class="points-avg">RPG: 10.2 </p>
+                                    <p class="points-avg">APG: 3.3</p>
+                                    <p class="points-avg">PIE: 15.8</p>
+
+                              </div>
+                              <div class="player_photo">
+                                    <img src="/images/1641705.avif" alt="">
+                              </div>
+
+                        </div>
+                        <div class="right-block">
+                               <div class="entete-intro">
+                                    <h2>Victor Wembanyama</h2>
+                              </div>
+
+                              <div class="info-team">
+                                    <p>Team: San Antonio Spurs</p>
+                                    <p>Height: 7'4</p>
+                                    <p>Weight: 210lb</p>
+                                    <p>Country: France</p>
+                                    <p>Last Attented: Metropolitans 92</p>
+                                    <p>Draft: 2023 R1 Pick 1</p>
+                                    
+                              </div>
+
+                              <div class="avg-stats">
+                                    <p class="points-avg">PPG: 20.6</p>
+                                    <p class="points-avg">RPG: 10.2 </p>
+                                    <p class="points-avg">APG: 3.3</p>
+                                    <p class="points-avg">PIE: 15.8</p>
+
+                              </div>
+                              <div class="player_photo">
+                                    <img src="/images/1641705.avif" alt="Image de Wembanyama">
+                              </div>
+
+                        </div>
+
+                        </div>
+                  </div>
+            
+      </div>
+
 
       </div>
       <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-      
+      <% } %> 
 </body>
 </html>
